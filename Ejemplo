@@ -57,7 +57,6 @@ int main(int argc, char* argv[]) {
 
     if (rank == 0) {
         printf("Tiempo total de ejecución: %f segundos\n", end_time - start_time);
-       
     }
 
     // Liberación de memoria
@@ -71,3 +70,4 @@ int main(int argc, char* argv[]) {
 
     MPI_Finalize();
     return 0;
+} // <-- This closing brace was likely missing or misplaced
